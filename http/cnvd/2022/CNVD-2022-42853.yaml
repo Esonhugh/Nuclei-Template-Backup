@@ -14,7 +14,6 @@ info:
     cvss-score: 10.0
     cwe-id: CWE-89
   metadata:
-    max-request: 1
     verified: true
     shodan-query: http.title:"zentao"
     fofa-query: "Zentao"
@@ -23,7 +22,7 @@ info:
 variables:
   num: "999999999"
 
-http:
+requests:
   - raw:
       - |
         POST /zentao/user-login.html HTTP/1.1

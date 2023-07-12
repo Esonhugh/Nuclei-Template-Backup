@@ -14,10 +14,8 @@ info:
     cwe-id: CWE-434
   remediation: Pan Wei has released an update to resolve this vulnerability.
   tags: pan,micro,cnvd,cnvd2021,fileupload,intrusive
-  metadata:
-    max-request: 2
 
-http:
+requests:
   - raw:
       - |
         POST /general/index/UploadFile.php?m=uploadPicture&uploadType=eoffice_logo&userId= HTTP/1.1
