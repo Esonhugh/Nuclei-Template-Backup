@@ -15,8 +15,10 @@ info:
     cvss-score: 10.0
     cwe-id: CWE-77
   tags: cnvd,cnvd2020,sunflower,rce
+  metadata:
+    max-request: 2
 
-requests:
+http:
   - raw:
       - |
         POST /cgi-bin/rpc HTTP/1.1
@@ -45,5 +47,3 @@ requests:
           - "contains(body_1, 'verify_string')"
           - "contains(body_2, 'Windows IP')"
         condition: and
-
-# Enhanced by mp on 2022/05/12

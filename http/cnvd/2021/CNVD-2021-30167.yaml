@@ -14,8 +14,10 @@ info:
     cvss-score: 10.0
     cwe-id: CWE-77
   tags: cnvd,cnvd2021,beanshell,rce,yonyou
+  metadata:
+    max-request: 2
 
-requests:
+http:
   - raw:
       - | #linux
         POST /servlet/~ic/bsh.servlet.BshServlet HTTP/1.1
@@ -46,5 +48,3 @@ requests:
       - type: status
         status:
           - 200
-
-# Enhanced by cs on 2022/07/05

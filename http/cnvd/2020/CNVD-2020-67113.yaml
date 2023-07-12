@@ -12,11 +12,12 @@ info:
     cvss-score: 5.3
     cwe-id: CWE-425
   metadata:
+    max-request: 2
     verified: true
     shodan-query: http.title:"H5S CONSOLE"
   tags: cnvd,cnvd2020,h5s,unauth,h5sconsole
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/api/v1/GetSrc"
@@ -47,5 +48,3 @@ requests:
       - type: status
         status:
           - 200
-
-# Enhanced by mp on 2022/07/06
